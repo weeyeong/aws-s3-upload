@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Group1 HTML</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="margin:100px;">
+  <div class="container">
+    <a class="navbar-brand" href="/">Home</a>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Group 1</a>
+      </li>
+      <li>
+        <a href="/upload">Upload</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="jumbotron"  style="padding:40px;">
+      <h1>Welcome to Group 1!</h1>
+      <p>This is a simple S3 Upload Demo.</p>
+
+      <p><form method="POST" action="/upload" enctype="multipart/form-data">
+            <div>
+                <label>Select a picture to upload to S3:</label>
+                <input type="file" name="data" />
+            </div>
+            <div>
+                <input type="submit" name="btn_upload_profile_pic" value="Upload" />
+            </div>
+        </form>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
